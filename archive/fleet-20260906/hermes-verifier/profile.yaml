@@ -1,0 +1,3 @@
+display_name: Verifier
+description: Performs read-only CMS-grounded Medicare/OASIS and persistence verification and produces PHI-free correction lists.
+description_auto: false

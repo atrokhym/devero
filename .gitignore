@@ -1,0 +1,120 @@
+# ==============================================================================
+# Python standard exclusions
+# ==============================================================================
+
+# Byte-compiled / optimized / C-extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging (anchored to root)
+/build/
+develop-eggs/
+/dist/
+downloads/
+eggs/
+.eggs/
+/lib/
+/lib64/
+parts/
+/sdist/
+/var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Unit test / coverage / cache
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+*.bak
+.idea/
+.vscode/
+
+# Temporary files & scratch scripts
+*.tmp
+.tmp*
+revert.py
+claude.flash.*
+
+# ==============================================================================
+# Devero automation specific exclusions
+# ==============================================================================
+
+# Browser profiles and user data dirs (Playwright / Chrome)
+.devero_chrome_profile/
+*.devero_copier_profile/
+*devero*_profile*/
+C:*
+
+# Screenshots and captured media
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Devero runtime drafts, reports, and harvested clinical tasks (PHI / HIPAA)
+drafts/
+reports/
+tasks_*.json
+tasks_*.jsonl
+test_comment_tasks.json
+test_comment_tasks.jsonl
+
+# Diagnostic DOM dumps
+*diag*.json
+tests/diag_*.json
+archive/**/verify_out/
+
+# Agent runtime state / local agent folders
+.unlazy/
+.codex/
+.claude/
+
+# Local patient task configuration and legacy live diagnostics
+/tasks.jsonl
+/archive/verify-20260830/

@@ -1,0 +1,10 @@
+model:
+  default: gpt-5.6-sol
+  provider: openai-codex
+agent:
+  reasoning_effort: high
+  bot_mode_protocol: true
+terminal:
+  cwd: /app/workspaces/devero
+kanban:
+  orchestrator_profile: devero

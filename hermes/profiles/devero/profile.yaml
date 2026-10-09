@@ -1,0 +1,3 @@
+display_name: Devero
+description: Runs Python automation scripts for Devero EHR clinical documents (verify, fix, copy, draft) on user request.
+description_auto: false

@@ -1,0 +1,3 @@
+display_name: Copier
+description: Runs exact Chief-delegated Python commands from /app/workspaces/devero and performs gated deterministic Devero transfers.
+description_auto: false

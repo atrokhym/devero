@@ -1,0 +1,4 @@
+interface:
+  display_name: "Devero Form Automation"
+  short_description: "Debug changing Devero forms and linked data"
+  default_prompt: "Use $devero-form-automation to diagnose and safely fix this Devero form-copying issue."

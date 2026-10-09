@@ -1,0 +1,30 @@
+[project]
+name = "devero-automation"
+version = "0.1.0"
+description = "Devero Dynamic Form Automation and Note Copier"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.40.0",
+    "PyYAML>=6.0.2",
+    "selenium>=4.15.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["devero_copier", "devero_field_debugger", "devero_inspector"]
+
+[tool.setuptools.packages.find]
+include = ["devero_fleet*"]
+
+[tool.setuptools.package-data]
+devero_fleet = ["oasis_e2_v302.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["archive", ".*", "build", "dist"]
+
